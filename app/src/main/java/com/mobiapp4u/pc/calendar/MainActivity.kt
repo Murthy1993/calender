@@ -22,7 +22,7 @@ import com.prolificinteractive.materialcalendarview.OnDateSelectedListener
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
-var cview:MaterialCalendarView? =null
+
 class MainActivity : AppCompatActivity() {
     var cal = mutableListOf<CalenderModel>()
     var adapter:CalenderAdapter?=null
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 
         calendarView.setOnDateChangedListener(object: OnDateSelectedListener{
             override fun onDateSelected(p0: MaterialCalendarView, p1: CalendarDay, p2: Boolean) {
-                cview = p0
+              
                 val dt = ""+p1.day +" - "+p1.month+" - "+p1.year
                  var dt1 = dt.trim()
 
