@@ -23,7 +23,7 @@ class SaveEvent : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_save_event)
         supportActionBar!!.title = "New Event"
-        editText_date.setText(dt1)
+        
 
         imageView_date_picker.setOnClickListener {
             var listener = object : DatePickerDialog.OnDateSetListener {
