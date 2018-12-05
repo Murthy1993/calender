@@ -21,7 +21,7 @@ import com.prolificinteractive.materialcalendarview.OnDateSelectedListener
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
-var dt1:String? = null
+
 var cview:MaterialCalendarView? =null
 class MainActivity : AppCompatActivity() {
     var cal = mutableListOf<CalenderModel>()
@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
             override fun onDateSelected(p0: MaterialCalendarView, p1: CalendarDay, p2: Boolean) {
                 cview = p0
                 val dt = ""+p1.day +" - "+p1.month+" - "+p1.year
-                 dt1 = dt.trim()
+                 var dt1 = dt.trim()
 
 //                Toast.makeText(this@MainActivity,"Selected date is: $dt1",Toast.LENGTH_SHORT).show()
                 var actvity = Database(this@MainActivity)
